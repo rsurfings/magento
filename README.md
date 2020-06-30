@@ -3,6 +3,10 @@
 composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition magento
 ```
 
+## Magento Key
+public key and private key need to be generate at https://marketplace.magento.com/customer/accessKeys the public key is the user and  private key is the password
+
+
 ## Set permissions
 ```bash
 cd magento
