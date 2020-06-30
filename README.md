@@ -15,7 +15,9 @@ find . -type d -exec chmod 770 {} + && find . -type f -exec chmod 660 {} + && ch
 ## Docker installation script
 git clone https://github.com/rsurfings/magento magento-docker
 
-cd magento-docker docker-compose up -d
+cd magento-docker 
+##
+docker-compose up -d
 
 ## local maper
 sudo -- sh -c "echo '127.0.0.1 local.domain.com' >> /etc/hosts"
