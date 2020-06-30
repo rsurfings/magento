@@ -1,6 +1,10 @@
 # Docker image for Magento 2.x
 composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition magento
 
+#Set permissions
+cd magento
+find . -type d -exec chmod 770 {} + && find . -type f -exec chmod 660 {} + && chmod u+x bin/magento
+
 git clone https://github.com/rsurfings/magento magento-docker
 
 ## Docker installation script
