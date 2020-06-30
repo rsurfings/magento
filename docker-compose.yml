@@ -4,7 +4,7 @@ services:
         image: alexcheng/magento2
         container_name: web
         restart: always
-        user: application
+       #user: application
         environment:
           - WEB_ALIAS_DOMAIN=local.domain.com
           - WEB_DOCUMENT_ROOT=/app/pub
