@@ -6,7 +6,6 @@ composer create-project --repository-url=https://repo.magento.com/ magento/proje
 ## Magento Key
 public key and private key need to be generate at https://marketplace.magento.com/customer/accessKeys the public key is the user and  private key is the password
 
-
 ## Set permissions
 ```bash
 cd magento
@@ -21,6 +20,10 @@ cd magento-docker docker-compose up -d
 ## local maper
 sudo -- sh -c "echo '127.0.0.1 local.domain.com' >> /etc/hosts"
 
+## Magento Database need to be created
+```
+CREATE DATABASE magento;
+```
 ## Docker access via bash
 ```bash
 docker exec -it web bash
