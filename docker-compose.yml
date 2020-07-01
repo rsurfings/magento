@@ -4,7 +4,6 @@ services:
         image: alexcheng/magento2
         container_name: web
         restart: always
-       #user: application
         environment:
           - WEB_ALIAS_DOMAIN=local.domain.com
           - WEB_DOCUMENT_ROOT=/app/pub
@@ -15,7 +14,7 @@ services:
           - PHP_POST_MAX_SIZE=500M
           - PHP_UPLOAD_MAX_FILESIZE=1024M
         volumes:
-          - /home/ronaldo/workspace/docker/magento_local:/app:cached
+          - /home/<USER>/magento:/app:cached
         ports:
           - "80:80"
           - "443:443"
